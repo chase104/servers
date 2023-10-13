@@ -20,7 +20,7 @@ app.use(morgan('dev'))
 
 app.use(middleware);
 
-app.use(express.json()) // adds .body to the request
+app.use(express.json()); // adds .body to the request
 
 // "/"
 // serve the html and js of our react app (dist folder)
